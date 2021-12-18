@@ -1,0 +1,11 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:530: checking how to run the C preprocessor
+configure:551: cc -E  conftest.c >/dev/null 2>conftest.out
+configure:612: checking for main in -lz
+configure:627: cc -o conftest    conftest.c -lz   1>&5
+configure:645: checking for zlib.h
+configure:655: cc -E  conftest.c >/dev/null 2>conftest.out
+configure:673: checking if zlib version >= 1.1.3
+configure:692: cc -o conftest    conftest.c  1>&5

@@ -26,7 +26,7 @@ bg.correct.mas <- function(object, griddim=16)
 
    nprobes <- length(allx)
 
-   corrected <- matrix(.C("affy_background_adjust_R",
+   corrected <- matrix(.Call("affy_background_adjust_R",
                           as.double(as.vector(allintensities)), as.integer(allx), as.integer(ally),
                           as.integer(nprobes), as.integer(nchips), as.integer(rows), as.integer(cols),
                           as.integer(griddim), PACKAGE="affy")[[1]],
